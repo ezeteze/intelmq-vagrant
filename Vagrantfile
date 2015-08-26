@@ -14,7 +14,7 @@ Vagrant.configure(2) do |config|
      vb.cpus = "4"
   end
   config.vm.provision "ansible" do  |ansible|
-         ansible.playbook = "../../git/intelmq-elk/site.yml"
+         ansible.playbook = "intelmq-elk/site.yml"
          ansible.sudo = "true"
   end
 end
